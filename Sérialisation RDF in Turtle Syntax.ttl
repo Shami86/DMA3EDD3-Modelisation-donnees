@@ -1,0 +1,40 @@
+@prefix rdf: <http: www.w3.org 1999 02 22-rdf-syntax-ns#> .
+@prefix voc: <http: www.PARIS8.fr voc#> .
+@prefix xml: <http: www.w3.org XML 1998 namespace> .
+@prefix xsd: <http: www.w3.org 2001 XMLSchema#> .
+
+<http: www.PARIS8.fr data#Margot> a voc:enseignante, voc:femme ;
+
+    voc:age "32"^^xsd:string ;
+    voc:pantalon "40"^^xsd:string;
+    voc:chaussure "38"^^xsd:string;
+    voc:enfant      <http: www.PARIS8.fr/data#Marie>,
+                    <http: www.PARIS8.fr/data#Simon>;
+
+    voc:marier   <http: www.PARIS8.fr/data#Arthur>;
+
+    voc:maman    <http: www.PARIS8.fr/data#Simone>;
+
+    voc:collegue <http: www.PARIS8.fr/data#Pierre>;
+                 <http: www.PARIS8.fr/data#Alice>;
+    voc:nom "Margot" .
+                            
+<http: www.PARIS8.fr/data#Arthur> a voc:Homme ;
+    voc:enfant      <http: www.PARIS8.fr/data#Marie>,
+                    <http: www.PARIS8.fr/data#Simon>;
+    voc:nom "Arthur" .
+
+<http: www.PARIS8.fr/data#Marie> a voc:femme ;
+    voc:nom "Marie" .
+
+<http: www.PARIS8.fr/data#Simone> a voc:femme ;
+    voc:nom "Simone" .
+
+<http: www.PARIS8.fr/data#Alice> a voc:femme ;
+    voc:nom "Alice" . 
+
+<http: www.PARIS8.fr/data#Simon> a voc:Homme ;
+    voc:nom "Simon" .
+
+<http: www.PARIS8.fr/data#Pierre> a voc:Homme ;
+    voc:nom "Pierre" .
