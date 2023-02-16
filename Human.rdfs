@@ -1,0 +1,120 @@
+rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:base="http://www.inria.fr/2007/09/11/humans.rdfs">
+
+<Class rdf:ID="human">
+<label xml:lang="en">Person</label>
+ </Class>
+
+<Class rdf:ID="Woman">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Female"/>
+<label xml:lang="en">Margot</label>
+<comment xml:lang="en">an adult female person</comment>
+</Class>
+
+<Class rdf:ID="Teacher">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Female"/>
+<label xml:lang="en">Teacher</label>
+<label xml:lang="en">Margot</label>
+</Class>
+
+<rdf:Property rdf:ID="hasChild">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Male"/>
+<label xml:lang="en">Simon</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasChild">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Female"/>
+<label xml:lang="en">Marie</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasMother">
+<subPropertyOf rdf:resource="#hasParent"/>
+<domain rdf:resource="#Person"/>
+<range rdf:resource="#Female"/>
+<label xml:lang="en">Simone</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasHusband">
+<domain rdf:resource="#Person"/>
+<range rdf:resource="#Male"/>
+<label xml:lang="en">Arthur</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasCollegue">
+<domain rdf:resource="#Person"/>
+<range rdf:resource="#Female"/>
+<label xml:lang="en">Alice</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="hasCollegue">
+<domain rdf:resource="#Person"/>
+<range rdf:resource="#Male"/>
+<label xml:lang="en">Pierre</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="shoesize">
+<domain rdf:resource="#Person"/>
+<range rdf:resource="#Female"/>
+<label xml:lang="en">Margot</label>
+<label xml:lang="en">size</label>
+<label xml:lang="en">38</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="age">
+<domain rdf:resource="#Person"/>
+<range rdf:resource="#Female"/>
+<label xml:lang="en">Margot</label>
+<label xml:lang="en">age</label>
+<label xml:lang="en">32</label>
+</rdf:Property>
+
+<rdf:Property rdf:ID="trouserssize">
+<domain rdf:resource="#Person"/>
+<range rdf:resource="#Female"/>
+<label xml:lang="en">Margot</label>
+<label xml:lang="en">size</label>
+<label xml:lang="fr">40</label>
+</rdf:Property>
+
+<Class rdf:ID="Man">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Male"/>
+<label xml:lang="en">Pierre</label>
+<comment xml:lang="en">an adult male person</comment>
+</Class>
+
+<Class rdf:ID="Man">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Male"/>
+<label xml:lang="en">Arthur</label>
+<comment xml:lang="en">an adult male person</comment>
+</Class>
+
+<Class rdf:ID="Man">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Male"/>
+<label xml:lang="en">Simon</label>
+</Class>
+
+<Class rdf:ID="Woman">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Female"/>
+<label xml:lang="en">Marie</label>
+</Class>
+
+<Class rdf:ID="Woman">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Female"/>
+<label xml:lang="en">Alice</label>
+<comment xml:lang="en">an adult female person</comment>
+</Class>
+
+<Class rdf:ID="Woman">
+<subClassOf rdf:resource="#Person"/>
+<subClassOf rdf:resource="#Female"/>
+<label xml:lang="en">Simone</label>
+<comment xml:lang="en">an adult female person</comment>
+</Class>
