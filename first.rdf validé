@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http: www.PARIS8.fr voc#">
+
+  <rdf:Description rdf:about="http: www.PARIS8.fr data#Margot">
+    <rdf:type rdf:resource="http: www.PARIS8.fr voc#enseignante"/>
+    <rdf:type rdf:resource="http: www.PARIS8.fr voc#femme"/>
+    <ns0:age rdf:datatype="http: www.w3.org 2001 XMLSchema#string">32</ns0:age>
+    <ns0:pantalon rdf:datatype="http: www.w3.org 2001 XMLSchema#string">40</ns0:pantalon>
+    <ns0:chaussure rdf:datatype="http: www.w3.org 2001 XMLSchema#string">38</ns0:chaussure>
+    <ns0:enfant rdf:resource="http: www.PARIS8.fr/data#Marie"/>
+    <ns0:enfant rdf:resource="http: www.PARIS8.fr/data#Simon"/>
+    <ns0:marier>
+      <ns0:Homme rdf:about="http: www.PARIS8.fr/data#Arthur">
+        <ns0:enfant rdf:resource="http: www.PARIS8.fr/data#Marie"/>
+        <ns0:enfant rdf:resource="http: www.PARIS8.fr/data#Simon"/>
+        <ns0:nom>Arthur</ns0:nom>
+      </ns0:Homme>
+    </ns0:marier>
+
+    <ns0:maman>
+      <ns0:femme rdf:about="http: www.PARIS8.fr/data#Simone">
+        <ns0:nom>Simone</ns0:nom>
+      </ns0:femme>
+    </ns0:maman>
+
+    <ns0:collegue>
+      <ns0:Homme rdf:about="http: www.PARIS8.fr/data#Pierre">
+        <ns0:nom>Pierre</ns0:nom>
+      </ns0:Homme>
+    </ns0:collegue>
+
+    <ns0:collegue>
+      <ns0:femme rdf:about="http: www.PARIS8.fr/data#Alice">
+        <ns0:nom>Alice</ns0:nom>
+      </ns0:femme>
+    </ns0:collegue>
+
+    <ns0:nom>Margot</ns0:nom>
+  </rdf:Description>
+
+  <ns0:femme rdf:about="http: www.PARIS8.fr/data#Marie">
+    <ns0:nom>Marie</ns0:nom>
+  </ns0:femme>
+
+  <ns0:Homme rdf:about="http: www.PARIS8.fr/data#Simon">
+    <ns0:nom>Simon</ns0:nom>
+  </ns0:Homme>
+
+</rdf:RDF>
